@@ -16,8 +16,7 @@
 #define TRANS_TIMEOUT "1" /* must be a string! */
 #define CURL_PROG "/usr/bin/curl"
 
-#define DEFAULT_METHOD "GET"
-#define DEFAULT_URL "http://192.168.0.1"
+#define DEFAULT_URL "https://www.google.com/"
 
 #define WEB_OKAY "🆗"
 #define WEB_ERROR "⛔"
@@ -37,9 +36,9 @@ int main(int argc, char **argv) {
     url = DEFAULT_URL;
   }
 
-  char *method_param = "-XGET";
-  if (strcmp(method, "HEAD") == 0) {
-    method_param = "-I";
+  char *method_param = "-I";
+  if (strcmp(method, "GET") == 0) {
+    method_param = "-XGET";
   } else if (strcmp(method, "POST") == 0) {
     method_param = "-XPOST";
   }
