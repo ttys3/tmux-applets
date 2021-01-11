@@ -18,7 +18,7 @@
 
 #define DEFAULT_URL "https://www.google.com/"
 
-#define WEB_OKAY "🆗"
+#define WEB_OKAY "🪜"
 #define WEB_ERROR "⛔"
 
 int main(int argc, char **argv) {
