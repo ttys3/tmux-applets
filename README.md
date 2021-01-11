@@ -23,6 +23,11 @@ Then run:
 	$ make
 	$ make install
 
+To make static binaries:
+
+```bash
+make CFLAGS=-static
+```
 
 Usage in tmux
 -------------
