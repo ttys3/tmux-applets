@@ -22,11 +22,11 @@
 #define WEB_ERROR "🈲"
 
 int main(int argc, char **argv) {
-  char *method;
   char *url;
   int status;
   pid_t pid;
 
+  char *method = "GET";
   if (argc > 2) {
     method = argv[1];
     url = argv[2];
